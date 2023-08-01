@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+body {
+  background-color: hsl(0, 0%, 86%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  font-weight: 800;
+  font-size: 0.71rem;
+  letter-spacing: 0.2rem;
+}
+
+#container {
+  background-color: white;
+  position: relative;
+  padding: 4rem;
+  border-radius: 2rem;
+  border-bottom-right-radius: 30%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hidden {
+  display: none;
+}
+
+#inputs {
+  padding-bottom: 3rem;
+  padding-right: 7rem;
+  display: flex;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.invalid-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.day-invalid-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.month-invalid-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.year-invalid-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.border-error {
+  border: 1.5px solid hsl(0, 100%, 67%) !important;
+}
+
+.empty-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.day-empty-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.month-empty-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.year-empty-error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+input {
+  font-size: 32px;
+  width: 155px;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.arrow {
+  background-color: hsl(259, 100%, 65%);
+  position: absolute;
+  left: 650px;
+  top: 163px;
+  border: none;
+  border-radius: 50%;
+  padding: 0.8rem 0.85rem;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow:active {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.res {
+  font-weight: 800;
+  font-size: 6rem;
+  font-style: italic;
+}
+
+.dash {
+  color: hsl(259, 100%, 65%);
+}

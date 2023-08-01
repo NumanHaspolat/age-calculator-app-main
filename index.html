@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="inputs">
+        <div class="col">
+          <label for="day" class="day-label">DAY</label>
+          <input type="number" id="day" placeholder="DD" onfocus="border(this)" />
+          <span class="day-empty-error empty-error hidden"
+            >This field is required</span
+          >
+          <span class="day-invalid-error invalid-error hidden"
+            >Must be valid day</span
+          >
+        </div>
+        <div class="col">
+          <label for="day" class="month-label">MONTH</label>
+          <input
+            type="number"
+            id="month"
+            placeholder="MM"
+            onfocus="border(this)"
+          />
+          <span class="month-empty-error empty-error hidden"
+            >This field is required</span
+          >
+          <span class="month-invalid-error invalid-error hidden"
+            >Must be valid month</span
+          >
+        </div>
+        <div class="col">
+          <label for="day" class="year-label">YEAR</label>
+          <input
+            type="number"
+            id="year"
+            placeholder="YYYY"
+            onfocus="border(this)"
+          />
+          <span class="year-empty-error empty-error hidden"
+            >This field is required</span
+          >
+          <span class="year-invalid-error invalid-error hidden"
+            >Must be in the past year</span
+          >
+        </div>
+      </div>
+      <button class="arrow">
+        <img src="assets/images/icon-arrow.svg" alt="" />
+      </button>
+
+      <div class="main">
+        <div class="years-result res">
+          <span class="dash dash-years">--</span> years
+        </div>
+        <div class="months-result res">
+          <span class="dash dash-months">--</span> months
+        </div>
+        <div class="days-result res">
+          <span class="dash dash-days">--</span> days
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
